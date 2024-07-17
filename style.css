@@ -1,0 +1,149 @@
+:root{
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-pattern: url('assets/artistic-pattern.png');
+ }
+ 
+ body {
+     box-sizing: border-box;
+     background: var(--background-pattern), var(--cor-de-fundo);
+     font-family: 'Raleway', sans-serif;
+     margin: 0;
+     padding: 0;
+     line-height: 1.5;
+     color: #333;
+ }
+ ol, ul,li {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+ a{
+     text-decoration: none;
+     color: var(--cor-de-link);
+ }
+ 
+ section.menu {
+     background-color: var(--primary-color);
+     padding: 1rem;
+ }
+ 
+ .menu__header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ 
+ .menu__title {
+     color: #fff;
+ }
+ 
+ .menu__list {
+     display: flex;
+     justify-content: space-around;
+     padding: 1rem 0;
+ }
+ 
+ .menu__list__item a {
+     color: #fff;
+     font-weight: bold;
+     transition: color 0.3s;
+ }
+ 
+ .menu__list__item a:hover {
+     color: var(--secondary-color);
+ }
+ 
+ .menu__list__item__contato a {
+     color: #fff;
+     font-weight: bold;
+ }
+ 
+ section.title {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: rgba(255, 255, 255, 0.8);
+     padding: 2rem 1rem;
+     margin: 2rem 0;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+ }
+ 
+ .title__profile {
+     border-radius: 50%;
+     margin-right: 1rem;
+ }
+ 
+ .title__bio, .title__subsection {
+     margin: 0;
+ }
+ 
+ .title__network__item a {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     margin-top: 0.5rem;
+     color: var(--primary-color);
+     transition: color 0.3s;
+ }
+ 
+ .title__network__item a:hover {
+     color: var(--secondary-color);
+ }
+ 
+ section.about, section.skills, section.hobbies, section.academic, section.experience, section.formcontato, section.footer {
+     padding: 2rem 1rem;
+     background: rgba(255, 255, 255, 0.8);
+     margin: 1rem 0;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+ }
+ 
+ .about__title, .skills__title, .hobbies__title, .academic__title, .experience__section__title, .formcontato__title {
+     margin-bottom: 1rem;
+     color: var(--primary-color);
+ }
+ 
+ .skills__line, .hobbies__line, .academic__courses, .experience__box {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     justify-content: center;
+ }
+ 
+ .skills__box, .hobbies__box, .academic__courses__box, .experience__box {
+     flex: 1 1 30%;
+     background: #fff;
+     padding: 1rem;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s;
+ }
+ 
+ .skills__box:hover, .hobbies__box:hover, .academic__courses__box:hover, .experience__box:hover {
+     transform: translateY(-5px);
+ }
+ 
+ .footer__rodape {
+     text-align: center;
+     color: #fff;
+     background: var(--primary-color);
+     padding: 1rem;
+ }
+ 
+ @media (max-width: 768px) {
+     .menu__list {
+         flex-direction: column;
+     }
+     .title__div, .about__container {
+         flex-direction: column;
+         text-align: center;
+     }
+     .title__profile {
+         margin-bottom: 1rem;
+     }
+ }
+ 
